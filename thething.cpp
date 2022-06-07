@@ -8,16 +8,14 @@ std::vector < std::string > Accounts
 
 };
 
-int
-AddAccountsInstance (string information)
+int AddAccountsInstance (string information)
 {
 
   Accounts.push_back (information);
   return Accounts.size () - 1;
 }
 
-string
-login (string name, string password)
+string login (string name, string password)
 {
   string
     final = name.append (password);
@@ -30,13 +28,11 @@ login (string name, string password)
       return "Logged in";
     }
     }
-  return
-    "Something didn't go well, did you type the name and/or password correctly?";
+  return "Something didn't go well, did you type the name and/or password correctly?";
 
 }
 
-string
-signup (string name, string password)
+string signup (string name, string password)
 {
   string
     final = name.append (password);
@@ -55,8 +51,7 @@ signup (string name, string password)
 }
 
 
-int
-main ()
+int main ()
 {
 
   string password;
